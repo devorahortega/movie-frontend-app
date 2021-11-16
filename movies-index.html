@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movies App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="moviesIndex.js" defer></script>
+  </head>
+  <body>
+    <h1>Hello from HTML!</h1>
+    <div id="app">
+      <div><button v-on:click="moviesList()">Show Movies</button></div>
+    </div>
+    <h2>Create a Movie:</h2>
+    Title:
+    <input type="text" v-model="newMovieParams.title" />
+    <button v-on:click="createMovie()">Create Movie</button>
+  </body>
+</html>
